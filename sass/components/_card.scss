@@ -1,0 +1,52 @@
+.card{
+    padding: 4rem;
+    width: 35rem;
+    background-color:  var(--color-primary);
+    background-image:url("../img/Mask Group 1.png");
+    border-radius: 30px;
+    cursor:grabbing;
+
+    box-shadow: 0rem 1rem 2rem  rgba(black, .3);
+
+    &__info{
+        text-align: left;
+        transform: translateY(14rem);
+        transition: all 0.3s 0.1s ease-out;
+
+        &__photo{
+            width: 10rem;
+        }
+        &__header{
+            font-size: 900;
+            margin: 2rem 0 ;
+            color: #fff;
+            font-size: 3rem;
+        }
+    }
+
+   
+
+    &__pargraph{
+        text-align: left;
+        color:transparent;
+        font-size: 1.5rem;
+        font-size: 700;
+
+        transform: translateY(18rem);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s 0.1s ease-in;
+    }
+
+    &:hover &__info{
+        transform: translateY(0);
+    }
+
+    &:hover  &__pargraph{
+        transform:  translateY(0);
+        opacity: 1;
+        visibility: visible;
+        color: #eee;
+    } 
+
+}

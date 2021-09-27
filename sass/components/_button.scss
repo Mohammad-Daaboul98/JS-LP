@@ -1,0 +1,21 @@
+.btn-white{
+    padding: 1.5rem 2.5rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-primary);
+    cursor: pointer;
+    scale: (1);
+
+    box-shadow:  0 1rem 2rem rgba(black, .1);
+    transition: all .2s;
+
+    &:hover{
+        transform: translateY(.5rem);
+    }
+    &:active{
+        transform: translateY(.5rem) scale(.9);
+    }
+}

@@ -1,0 +1,26 @@
+.footer{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+
+    &__links{
+        :not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+
+    &__link,
+    &:visited,
+    &:link{
+        color: var(--color-primary);
+        font-size: 1.75rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+}
+
+span{
+    color: var(--color-primary);
+    font-size: 2rem;
+}

@@ -1,0 +1,107 @@
+.form{
+ position: relative;
+ z-index:10;
+ 
+    &__group{
+        margin-bottom: 2rem;
+    }
+
+    &__label{
+        display: block;
+        margin-bottom: 1rem;
+        color: var(--color-primary);
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    &__input{
+        z-index:10;
+        width: 30%;
+        height:3rem;
+        border: none;
+        border-radius: 1px;
+
+        &:focus:invalid{
+            outline: none;
+            border-bottom:3px solid orangered;
+        }
+
+        &:focus{
+            outline: none;
+            border-bottom:3px solid greenyellow;
+        }
+    }
+
+ 
+
+       
+        
+        &__tel--1{
+        height:3rem;
+        border: none;
+        border-radius: 1px;
+        width: 4%;
+        margin-right: 1rem;
+
+        &:focus:invalid{
+            outline: none;
+            border-bottom:3px solid orangered;
+        }
+
+        &:focus{
+            outline: none;
+            border-bottom:3px solid greenyellow;
+        }
+
+       }
+
+       &__tel--2{
+            
+        height:3rem;
+        border: none;
+        border-radius: 1px;
+           width: 25%;
+
+           &:focus:invalid{
+            outline: none;
+            border-bottom:3px solid orangered;
+        }
+
+        &:focus{
+            outline: none;
+            border-bottom:3px solid greenyellow;
+        }
+       }
+        
+        
+
+    &__textarea{
+        width: 30%;
+        height:10rem;
+        border: none;
+        border-radius: 1px;
+
+        &:focus{
+            outline: none;
+            border-bottom:3px solid greenyellow;
+        }
+    }
+
+    &__btn{
+        padding: 1rem 4rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 30px;
+        color: #fff;
+        background: linear-gradient(to right , var(--color-primary) , var(--color-primary-light));
+        cursor: pointer;
+
+        box-shadow: 0 1rem 1.2rem rgba(black , 0.2);
+        transition: all .2s;
+
+        &:focus{
+            transform: scale(.9);
+        }
+    }
+}
