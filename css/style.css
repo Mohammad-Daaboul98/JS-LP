@@ -89,20 +89,21 @@ body {
 
 .section-book {
   position: relative;
-  padding: 5rem 10rem;
+  padding: 10rem 10rem;
   background-color: #f3eeff; }
   .section-book__heading {
     color: var(--color-primary-light);
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 25rem; }
   .section-book__bg {
     z-index: 1;
-    width: 65rem;
-    height: 40rem;
+    width: 97rem;
+    height: 60rem;
     position: absolute;
     top: 60%;
-    left: 45%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-image: url("../img/Artboard 16.png");
     background-size: cover; }
@@ -137,17 +138,20 @@ body {
   padding: 3rem;
   display: flex;
   justify-content: center; }
-  .footer__links :not(:last-child) {
-    margin-right: 2rem; }
-  .footer__link, .footer:visited, .footer:link {
+  .footer__link, .footer:visited, .footer:link, .footer {
     color: var(--color-primary);
     font-size: 1.75rem;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: color .2s; }
+    .footer__link :not(:last-child), .footer:visited :not(:last-child), .footer:link :not(:last-child), .footer :not(:last-child) {
+      margin-right: 5rem; }
+    .footer__link:hover, .footer:visited:hover, .footer:link:hover, .footer:hover {
+      color: var(--color-primary-dark); }
 
 span {
   color: var(--color-primary);
-  font-size: 2rem; }
+  font-size: 3rem; }
 
 .btn-white {
   padding: 1.5rem 2.5rem;
@@ -162,7 +166,9 @@ span {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   transition: all .2s; }
   .btn-white:hover {
-    transform: translateY(0.5rem); }
+    border: 2px solid #f3eeff;
+    background-color: transparent;
+    color: #fff; }
   .btn-white:active {
     transform: translateY(0.5rem) scale(0.9); }
 
@@ -177,7 +183,7 @@ span {
   .card__info {
     text-align: left;
     transform: translateY(14rem);
-    transition: all 0.3s 0.1s ease-out; }
+    transition: all 0.3s; }
     .card__info__photo {
       width: 10rem; }
     .card__info__header {
@@ -193,7 +199,7 @@ span {
     transform: translateY(18rem);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s 0.1s ease-in; }
+    transition: all .3s .2s ease-out; }
   .card:hover .card__info {
     transform: translateY(0); }
   .card:hover .card__pargraph {

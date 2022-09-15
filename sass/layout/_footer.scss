@@ -3,24 +3,29 @@
     display: flex;
     justify-content: center;
 
-    &__links{
-        :not(:last-child){
-            margin-right: 2rem;
-        }
-    }
-
     &__link,
     &:visited,
-    &:link{
+    &:link,&{
+
+        :not(:last-child){
+            margin-right: 5rem;
+        }
+
         color: var(--color-primary);
         font-size: 1.75rem;
         text-decoration: none;
         text-transform: uppercase;
+        transition:  color .2s;
+
+        &:hover{
+            color:var(--color-primary-dark) ;
+          }
     }
+   
 
 }
 
 span{
     color: var(--color-primary);
-    font-size: 2rem;
+    font-size: 3rem;
 }

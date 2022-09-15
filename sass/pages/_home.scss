@@ -54,23 +54,24 @@
 
 .section-book{
     position: relative;
-    padding: 5rem 10rem;
+    padding: 10rem 10rem;
     background-color:#f3eeff;
 
     &__heading{
         color: var(--color-primary-light);
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: 700;
         text-align: center;
+        margin-bottom: 25rem;
     }
 
     &__bg{
         z-index:1;
-        width: 65rem;
-        height:40rem ;
+        width: 97rem;
+        height:60rem ;
         position: absolute;
         top:60%;
-        left: 45%;
+        left: 50%;
         transform: translate(-50% , -50%);
         background-image: url("../img/Artboard 16.png");
         background-size: cover;
