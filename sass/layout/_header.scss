@@ -2,8 +2,6 @@
     position: relative;
     padding: 15rem 5rem;
     background-color: var(--color-primary);
-
-
     &__nav{
         position: absolute;
         top: 2rem;
@@ -24,7 +22,7 @@
     &__item{
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-around;  
 
         &__text{
             width: 30%;
@@ -35,9 +33,24 @@
             height: 40rem;
         }
     }
-
     
-
+    @include respond(tab-port) {
+        &__item{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
     
-
+            &__text{
+                text-align: center;
+                width: 100%;
+                margin-bottom: 4rem;
+            }
+    
+    
+            &__photo{
+                width: 70rem;
+                height: 40rem;
+            }
+        }       
+    }
 }

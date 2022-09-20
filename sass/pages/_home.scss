@@ -15,46 +15,59 @@
         line-height: 3rem;
         color: var(--color-primary-dark);
     }
+    @include respond(tab-port){
+        &__paragraph{
+            font-size: 3rem;
+        }
+    }
 
     &__cards{
         display:  flex;
         justify-content: space-evenly;
     }
-}
-
-.section-map{
-    padding: 5rem 0;
-    text-align: center;
-    background: linear-gradient(to right bottom ,var(--color-primary-dark) , var(--color-primary-light));
-    overflow: hidden;
-
-
-    &__photo{
+    @include respond(tab-port){
+        &__cards{
         display: flex;
-        justify-content:center ;
+        flex-direction: column;
         align-items: center;
-        
-        
-        &--map{
-            width: 40rem;  
-        }
-
-        &--arrow--right{
-            width: 20rem;
-            transform: translate( -5rem,10rem);
-            
-        }
-        &--arrow--left{
-            width: 20rem;
-            transform: translate( 10rem,-10rem);
-            
+        gap: 4rem;
         }
     }
 }
 
+// .section-map{
+//     padding: 5rem 0;
+//     text-align: center;
+//     background: linear-gradient(to right bottom ,var(--color-primary-dark) , var(--color-primary-light));
+//     overflow: hidden;
+
+
+//     &__photo{
+//         display: flex;
+//         justify-content:center ;
+//         align-items: center;
+        
+        
+//         &--map{
+//             width: 40rem;  
+//         }
+
+//         &--arrow--right{
+//             width: 20rem;
+//             transform: translate( -5rem,10rem);
+            
+//         }
+//         &--arrow--left{
+//             width: 20rem;
+//             transform: translate( 10rem,-10rem);
+            
+//         }
+//     }
+// }
+
 .section-book{
     position: relative;
-    padding: 10rem 10rem;
+    padding: 10rem;
     background-color:#f3eeff;
 
     &__heading{
@@ -76,5 +89,42 @@
         background-image: url("../img/Artboard 16.png");
         background-size: cover;
     }
+
+}
+@include respond(tab-port){
+    .section-book{
+        padding: 5rem;
+    
+        &__heading{
+            font-size: 4rem;
+        }
+    
+        &__bg{
+            z-index:1;
+            width: 65rem;
+            height:40rem;
+        }
+    }
+}
+
+@include respond(B-phone){
+    .section-book{
+        padding: 1rem 2rem;
+    
+        &__heading{
+            color: var(--color-primary-light);
+            font-size: 4rem;
+            height: 0;
+            margin-bottom: 2rem;
+
+        }
+    
+        &__bg{
+            z-index:1;
+            width: 52rem;
+            height:32rem;
+        }
+    }
+
 
 }

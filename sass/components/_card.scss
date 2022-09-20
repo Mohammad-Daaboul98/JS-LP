@@ -50,3 +50,29 @@
     } 
 
 }
+
+@include respond(tab-port){
+    .card{
+        width: 80%;
+        justify-content: center;
+        &__info{
+            text-align: left;
+            transform: translateY(0);
+            &__header{
+                font-size: 900;
+                margin: 2rem 0 ;
+                color: #fff;
+                font-size: 5rem;
+            }
+        }
+        &__pargraph{
+            text-align: left;
+            color:#fff;
+            font-size: 3rem;
+            font-size: 700;
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+}
+}
